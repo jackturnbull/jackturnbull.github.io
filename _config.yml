@@ -1,0 +1,52 @@
+title:            Jack Turnbull
+tagline:          Blog and Portfolio
+description:      I'm a Ruby on Rails developer based in Leeds. I have delivered web applications for the UK’s largest retailers and sporting events. I’m also a massive open source fanatic and user of free software.
+#Comment out url when working locally to resolve base urls correctly
+url: http://jack.codes
+
+# Owner/author information
+owner:
+  name:           Jack Turnbull
+  avatar:         avatar.png
+  bio:            "Ruby On Rails developer."
+  email:          j@jackturnbull.co.uk
+  twitter:        jackturnbull
+  github:         jackturnbull
+  location:       "Leeds, UK"
+
+tools:
+  standards:      "HTML, SCSS, Jekyll"
+  software:       "git"
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Who?
+    url: /who
+  - title: Github
+    url: https://github.com/jackturnbull
+    external: true
+  - title: Twitter
+    url: http://twitter.com/jackturnbull
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/London
+future:      true
+highlighter: pygments
+markdown:    kramdown
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+
+sass:
+    style: :compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]

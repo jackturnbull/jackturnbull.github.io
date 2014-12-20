@@ -1,0 +1,9 @@
+<div class="overlay"></div>
+<div class="featured-image" id="demo_main"></div>
+{% for demo in site.data.demos %}
+  {% if demo.id == include.id %}
+    <div class="credit">
+      <p>{{ demo.author }} <a href="{{ site.data.urls.wab }}{{ demo.id }}">@WAB</a>  <a id="volume_button"><span class="fa fa-volume-off" id="volume_font"></span></a></p>
+    </div>
+  {% endif %}
+{% endfor %}

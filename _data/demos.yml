@@ -1,0 +1,15 @@
+- id: 165
+  author: Ayoros
+  libraries: [codef_music.js,codef_core.js,codef_starfield.js,codef_scrolltext.js,codef_fx.js]
+
+- id: 177
+  author: SoLO
+  libraries: [codef_core.js,codef_3d.js,codef_tween.js,codef_music.js]
+
+- id: 187
+  author: Gandalf
+  libraries: [codef_core.js,codef_music.js,codef_scrolltext.js,codef_gradient.js]
+
+- id: 270
+  author: ChristianMurtas
+  libraries: [codef_core.js,codef_scrolltext.js,codef_fx.js,codef_gradient.js,codef_music.js]
