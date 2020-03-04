@@ -1,22 +1,34 @@
----
-layout: default
----
-{% assign posts_count = (paginator.posts | size) %}
-
-<div class="home">
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-        </div>
-      {% endfor %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Turnbull's Soap Box</title>
+  <meta name="description" content="It's not difficult.">
+  <meta name="author" content="Jack Turnbull">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto max-w-screen-md px-6 md:mt-48">
+    <h1 class="border-b-2 border-gray-400">Jack Turnbull<i>'</i>s Soap Box</h1>
+    <div class="grid gap-12 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 mt-10">
+      <div>
+        <p>I've been a developer for a number of years, and as a result you start to build opinions on how to do things better. We've all got our niche; for some of us it's writing printer drivers for Linux, and others it's knowing the exact set of rules to have flexbox render in IE. For me though, I like to try and keep developers happy by writing code in an accessible way, and providing the tools and processes needed to reduce frustration and improve buy-in.</p>
+        <p>Compromise is the key to healthy and happy relationships, and as developers we don't often understand how to compromise successfully. I build empathy and emotional maturity within software engineering teams to allow for smarter compromses. We've all heard of famous programmers getting burned out, and running to the mountains a year or two, but <i>why?</i> I'd put my career on it being the endless bullshit, and not because there were too many lines of code to write.</p>
+      </div>
+      <div>
+        <p><i>How many of you have removed a feature?</i></p>
+        <p>Sat down, taken away any pride and said "we thought it would work but it didn't, so lets remove it from our product suite." In my experience it's rare, so don't panic but it's time to stop the charade.</p>
+        <p>Developers aren't hard to please, you've just got to cut this bullshit. It becomes our job to secure and update these systems that hang around for generations of staff members while losing purpose and vision in our products and mission. Another day spent toiling away on something I don't know if people enjoy. I make it my job to identify these problems and reduce their impact. Sometimes we need to be a cowboy, and sometimes we need to reach alignment on what we have in common. We're humans working with robots day-in day-out, we don't need to treat each other like them too.</p>
+        <p>Lets have a reason to go into work tomorrow.</p>
+        <p><a href="mailto:work@jack.codes">Slide into my DMs</a></p>
+      </div>
     </div>
-</div>
+  </div>
+
+  <style>
+    html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}h1,p{margin:0}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}h1{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.container{width:100%;margin-right:auto;margin-left:auto}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.bg-gray-100{background-color:#f7fafc}.border-gray-400{border-color:#cbd5e0}.border-b-2{border-bottom-width:2px}.grid{display:grid}.mx-auto{margin-left:auto;margin-right:auto}.mt-10{margin-top:2.5rem}.max-w-screen-md{max-width:768px}.px-6{padding-left:1.5rem;padding-right:1.5rem}.gap-12{grid-gap:3rem;gap:3rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}a{color:#3182ce;text-decoration:underline;font-weight:600}h1{font-family:Macabre,Georgia,Cambria,Times New Roman,Times,serif;color:#000;font-size:4rem}p{font-family:"Source Serif Pro",Georgia,Cambria,Times New Roman,Times,serif;font-size:.875rem;text-align:justify;margin-bottom:.5rem}@media (min-width:640px){.sm\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}@media (min-width:768px){.md\:mt-48{margin-top:12rem}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1280px){.xl\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @font-face{font-family:Macabre;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/macabre/Macabrev0.2-Regular.woff2?#iefix) format("woff2"),url(fonts/macabre/Macabrev0.2-Regular.woff) format("woff")}
+    @font-face{font-family:"Source Serif Pro";font-weight:300;font-style:normal;font-stretch:normal;font-display:swap;src:local("Source Serif Pro"),url(fonts/source-serif-pro/SourceSerifPro-Light.woff2?#iefix) format("woff2"),url(fonts/source-serif-pro/SourceSerifPro-Light.woff) format("woff")}
+  </style>
+</body>
+</html>

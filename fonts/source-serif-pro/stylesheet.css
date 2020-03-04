@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: local('Source Serif Pro'), url('SourceSerifPro-Light.woff2?#iefix') format('woff2'),
+    url('SourceSerifPro-Light.woff') format('woff');
+}
